@@ -22,3 +22,5 @@ function getValues(event) {
 
   document.querySelector(".hasil").innerHTML = out;
 }
+
+// kasih display none untuk result
