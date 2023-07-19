@@ -19,11 +19,11 @@
         <p>Yuk, hitung sekarang di kalkulator BMI</p>
       </div>
       <div class="form-input-container">
-        <form action="" id="form-bmi" name="form-bmi">
+        <form action="" id="form-bmi" name="form-bmi" method="post">
           <div class="jenis-kelamin-container">
             <span for="jenis-kelamin">Jenis Kelamin</span>
             <div>
-              <input type="radio" id="pria" name="jenis-kelamin" value="pria" />
+              <input type="radio" id="pria" name="jenisKelamin" value="pria" />
               <label for="pria">Pria</label>
               <input
                 type="radio"
@@ -35,23 +35,18 @@
             </div>
           </div>
           <div class="berat-badan-container">
-            <label for="berat-badan">Berat Badan (kg)</label>
-            <input type="number" id="berat-badan" name="berat-badan" required />
+            <label for="beratBadan">Berat Badan (kg)</label>
+            <input type="number" id="beratBadan" name="beratBadan" required />
           </div>
           <div class="berat-badan-container">
             <label for="usia">Usia (tahun)</label>
             <input type="number" id="usia" name="usia" />
           </div>
           <div class="berat-badan-container">
-            <label for="tinggi-badan">Tinggi Badan (cm)</label>
-            <input
-              type="number"
-              id="tinggi-badan"
-              name="tinggi-badan"
-              required
-            />
+            <label for="tinggiBadan">Tinggi Badan (cm)</label>
+            <input type="number" id="tinggiBadan" name="tinggiBadan" required />
           </div>
-          <div class="form-butto">
+          <div class="form-button">
             <button type="submit">Hitung BMI</button>
             <button type="reset">Reset</button>
           </div>
@@ -81,6 +76,8 @@
           Anda (dalam meter) atau BMI = Kg/M&#xb2;
         </p>
       </div>
+      <div class="hasil"></div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
