@@ -19,6 +19,9 @@ h1 {
   flex-direction: column;
   background-color: azure;
 }
+form {
+  width: max-content;
+}
 
 .jenis-kelamin-container {
   display: flex;
