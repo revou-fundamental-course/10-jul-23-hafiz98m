@@ -36,7 +36,14 @@
           </div>
           <div class="berat-badan-container">
             <label for="beratBadan">Berat Badan (kg)</label>
-            <input type="number" id="beratBadan" name="beratBadan" required />
+            <input
+              type="number"
+              id="beratBadan"
+              name="beratBadan"
+              min="50"
+              max="150"
+              required
+            />
           </div>
           <div class="berat-badan-container">
             <label for="usia">Usia (tahun)</label>
@@ -44,7 +51,14 @@
           </div>
           <div class="berat-badan-container">
             <label for="tinggiBadan">Tinggi Badan (cm)</label>
-            <input type="number" id="tinggiBadan" name="tinggiBadan" required />
+            <input
+              type="number"
+              id="tinggiBadan"
+              name="tinggiBadan"
+              min="100"
+              max="200"
+              required
+            />
           </div>
           <div class="form-button">
             <button type="submit">Hitung BMI</button>
@@ -76,17 +90,36 @@
           Anda (dalam meter) atau BMI = Kg/M&#xb2;
         </p>
       </div>
-      <div class="hasil" style="display: none">
+      <div class="hasil" style="display: flex">
         <div>
           <h1>Hasil</h1>
-          <div class="hasil-container">
+          <div class="hasil-angka">
             <div class="klasifikasi-berat"></div>
             <div class="bmi"></div>
             <div class="klasifikasi-berat-detail"></div>
             <button>Downlaod Hasil BMI</button>
           </div>
         </div>
-        <!-- <div id="bmi"></div> -->
+        <div class="detail-hasil">
+          <div class="detail-pertama"></div>
+          <div>
+            <button>Konsultasi Ahli Gizi</button>
+            <button>Registrasi Online Ahli Gizi</button>
+          </div>
+          <p>
+            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
+            tubuh dan resiko penyakit seseorang. Anda perlu berkonsultasi lebih
+            lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat
+            badan Anda.
+          </p>
+          <div class="hasil-angka">
+            <div class="detail-kedua"></div>
+            <div>
+              <button>Konsultasi Ahli Gizi</button>
+              <button>Registrasi Online Ahli Gizi</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/index.js"></script>

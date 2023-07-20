@@ -5,6 +5,7 @@
   /* background-color: aqua; */
   /* justify-content: center; */
   align-items: left;
+  width: 100%;
 }
 
 h1 {
@@ -39,4 +40,23 @@ h1 {
 ol {
   padding-left: 0;
   list-style-position: inside;
+}
+.hasil {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.hasil-angka {
+  width: 100%;
+  align-items: center;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  /* align-items: center; */
+  list-style-type: none;
+  text-align: center;
 }
